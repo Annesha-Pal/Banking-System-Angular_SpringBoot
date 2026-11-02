@@ -1,0 +1,55 @@
+<div class="container">
+
+  <h1>Banking Management System</h1>
+  <p class="subtitle">Simple Account Management</p>
+
+  @if (account) {
+
+    <div class="account-card">
+
+      <h2>{{ account.customerName }}</h2>
+
+      <p>Account Number: {{ account.accountNumber }}</p>
+
+      <h3>Available Balance</h3>
+
+      <div class="balance">
+        {{ account.balance | currency:'INR':'symbol':'1.2-2' }}
+      </div>
+
+    </div>
+
+    <div class="transaction-card">
+
+      <h2>Make a Transaction</h2>
+
+      <input
+        type="number"
+        placeholder="Enter amount"
+        min="0.01"
+        [(ngModel)]="amount"
+      />
+
+      <div class="buttons">
+
+        <button class="deposit" (click)="deposit()">
+          Deposit
+        </button>
+
+        <button class="withdraw" (click)="withdraw()">
+          Withdraw
+        </button>
+
+      </div>
+
+      @if (message) {
+        <p class="message">{{ message }}</p>
+      }
+
+    </div>
+
+  } @else {
+    <p>{{ message || 'Loading account...' }}</p>
+  }
+
+</div>

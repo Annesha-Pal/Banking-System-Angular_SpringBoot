@@ -1,0 +1,74 @@
+.container {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #173b67;
+}
+
+.subtitle {
+  color: #777;
+}
+
+.account-card {
+  background: #edf4fb;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.account-card h2 {
+  color: #173b67;
+}
+
+.balance {
+  font-size: 30px;
+  font-weight: bold;
+  color: #218838;
+  margin-top: 10px;
+}
+
+.transaction-card {
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+input {
+  padding: 12px;
+  width: 80%;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.deposit {
+  background: #218838;
+}
+
+.withdraw {
+  background: #c0392b;
+}
+
+.message {
+  margin-top: 20px;
+  color: #173b67;
+}
